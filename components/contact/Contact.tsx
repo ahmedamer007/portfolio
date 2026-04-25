@@ -14,7 +14,7 @@ export default function Contact() {
         <h2 className="text-4xl font-bold mb-6">Contact Me</h2>
 
         <p className="text-gray-400 mb-10">
-          I'm currently available for freelance or full-time opportunities.
+          I&apos;m currently available for freelance or full-time opportunities.
         </p>
 
         <form

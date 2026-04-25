@@ -1,8 +1,9 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 
-export default function Reveal({ children }: any) {
+export default function Reveal({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 80 }}

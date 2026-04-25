@@ -29,7 +29,7 @@ export default function Hero() {
       
       
       
-      x] h-[800px] bg-cyan-500/20 blur-[200px] rounded-full"
+      x] h-200 bg-cyan-500/20 blur-[200px] rounded-full"
       ></div>
 
       {/* Content */}
@@ -39,7 +39,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         className="text-center z-10"
-      > 
+      >
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -65,7 +65,9 @@ export default function Hero() {
           View Work
         </button>
       </motion.div>
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black animate-pulse"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-black via-gray-900 to-black animate-pulse"></div>
+
+     
     </section>
   );
 }

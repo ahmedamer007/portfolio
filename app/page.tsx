@@ -5,6 +5,8 @@ import Hero from "@/components/hero/Hero";
 import Navbar from "@/components/navbar/Navbar";
 import Projects from "@/components/projects/Projects";
 import Contact from "@/components/contact/Contact";
+import Testimonials from "@/components/testimonials/Testimonials";
+import Footer from "@/components/footer/Footer";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
@@ -23,7 +25,9 @@ return (
     <Navbar />
     <Hero />
     <Projects />
+      <Testimonials />
     <Contact />
+    <Footer />
   </main>
 );
 }
