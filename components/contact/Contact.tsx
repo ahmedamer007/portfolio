@@ -54,7 +54,7 @@ export default function Contact() {
         </form>
 
         <div className="mt-6 flex justify-center gap-6 text-gray-400">
-           <a href="ahmedamer3622@gmail.com" className="hover:text-white transition">
+           <a href="mailto:ahmedamer3622@gmail.com" className="px-4 py-2 border border-white/20 rounded-lg hover:bg-white hover:text-black transition">
               Email
             </a>
 
@@ -62,7 +62,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/%C3%A4hmed-%C3%A4mer-865273217/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition"
+              className="px-4 py-2 border border-white/20 rounded-lg hover:bg-white hover:text-black transition"
             >
                 LinkedIn
               </a>
@@ -71,7 +71,7 @@ export default function Contact() {
                 href="https://github.com/ahmedamer007"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-white transition"
+                className="px-4 py-2 border border-white/20 rounded-lg hover:bg-white hover:text-black transition"
               >
                 GitHub
               </a>

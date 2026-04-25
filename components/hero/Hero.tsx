@@ -10,7 +10,7 @@ export default function Hero() {
   const rotateY = useTransform(x, [-100, 100], [-10, 10]);
 
   return (
-    <section
+    <section id="hero"
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect();
         const xPos = e.clientX - rect.left - rect.width / 2;
@@ -22,15 +22,7 @@ export default function Hero() {
       className="relative h-screen flex items-center justify-center overflow-hidden bg-black text-white"
     >
       {/* Background Glow */}
-      <div
-        className="absolute w-[
-      
-      
-      
-      
-      
-      x] h-200 bg-cyan-500/20 blur-[200px] rounded-full"
-      ></div>
+      <div className="absolute w-[600px] h-[600px] bg-cyan-500/20 blur-[150px] rounded-full"></div>
 
       {/* Content */}
       <motion.div
@@ -38,36 +30,43 @@ export default function Hero() {
         initial={{ opacity: 0, y: 80 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
-        className="text-center z-10"
+        className="text-center z-10 px-4"
       >
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ staggerChildren: 0.05 }}
-          className="text-5xl md:text-7xl font-bold"
-        >
-          {"Ahmed Amer".split("").map((char, i) => (
-            <motion.span
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="inline-block"
-            >
-              {char}
-            </motion.span>
-          ))}
-        </motion.h1>
-        <p className="mt-4 text-gray-400 text-lg">
-          Crafting immersive web experiences.
+        {/* Title */}
+        <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          Ahmed Amer | Frontend Develpoer
+
+        </h1>
+         <br />
+          
+        <h2 >Building High-Performance Web Experiences </h2>
+
+        {/* Description */}
+        <p className="mt-6 text-gray-400 text-lg max-w-xl mx-auto">
+          I design and build high-performance, scalable, and visually engaging
+          web applications using React and Next.js.
         </p>
 
-        <button className="mt-6 px-6 py-3 bg-cyan-400 text-black rounded-lg hover:scale-105 transition">
-          View Work
-        </button>
-      </motion.div>
-      <div className="absolute inset-0 bg-linear-to-br from-black via-gray-900 to-black animate-pulse"></div>
+        {/* Buttons */}
+        <div className="mt-8 flex gap-4 justify-center flex-wrap">
+          <a
+            href="#projects"
+            className="px-6 py-3 bg-cyan-400 text-black rounded-lg hover:scale-105 transition"
+          >
+            View Projects
+          </a>
 
-     
+          <a
+            href="/cv/ahmed-amer-cv.pdf"
+            className="px-6 py-3 border border-white/20 rounded-lg hover:bg-white hover:text-black transition"
+          >
+            Download CV
+          </a>
+        </div>
+      </motion.div>
+
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black opacity-70"></div>
     </section>
   );
 }
