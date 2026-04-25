@@ -54,10 +54,28 @@ export default function Contact() {
         </form>
 
         <div className="mt-6 flex justify-center gap-6 text-gray-400">
-          <a href="#">Email</a>
-          <a href="#">LinkedIn</a>
-          <a href="#">GitHub</a>
-        </div>
+           <a href="ahmedamer3622@gmail.com" className="hover:text-white transition">
+              Email
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/%C3%A4hmed-%C3%A4mer-865273217/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+                LinkedIn
+              </a>
+
+              <a
+                href="https://github.com/ahmedamer007"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition"
+              >
+                GitHub
+              </a>
+         </div>
       </motion.div>
     </section>
   );
